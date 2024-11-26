@@ -96,3 +96,23 @@ showMathSkills();
 Make the calculation machine we just made show random calculations everytime you invoke the function.
 But hey, maybe limit the randomness to be numbers between 0-10?
 */
+
+
+const showMathSkills = (min, max) => {
+  let a = Math.floor(Math.random() * (max - min) + min);
+  console.log(a)
+  let b = Math.floor(Math.random() * (max - min) + min);
+  console.log(a)
+  let addition = a + b;
+
+  let giveMathProblem = prompt(`What is ${a} + ${b}?`);
+  if (parseInt(giveMathProblem) === addition) {
+    alert(`Yay! Correct`);
+  } else {
+    alert(`Sigh... That is just...wrong. Shame on you! It's ${addition}`);
+  }
+
+};
+
+showMathSkills(1, 10);
+
