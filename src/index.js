@@ -25,6 +25,7 @@ Pass in only ONE name when you call the function and see what happens.
 /*theCoders('jennie');*/
 
 /*
+
 3) 
 create a function that checks which name is the longest when comparing the coders 
 and print out: "The driver has the longest name." or "The navigator has the longest name" 
@@ -32,9 +33,9 @@ or if the names ar the same length "The driver and the navigator has equally lon
 */
 
 const findLongestName = (driver, navigator) => {
-  if (driver.lenght > navigator.lenght) {
+  if (driver.length > navigator.length) {
     console.log("The driver has the longest name.");
-  } else if (driver.lenght < navigator.lenght) {
+  } else if (driver.length < navigator.length) {
     console.log("The navigator has the longest name.");
   } else {
     console.log("The driver and the navigator has equally long names.");
